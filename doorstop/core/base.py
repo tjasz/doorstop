@@ -196,7 +196,7 @@ class BaseFileObject(object, metaclass=abc.ABCMeta):  # pylint:disable=R0921
         self.root = None
         self._data = {}
         self._exists = True
-        self._loaded = False
+        self._loaded = 0
 
     def __hash__(self):
         return hash(self.path)
@@ -227,11 +227,11 @@ class BaseFileObject(object, metaclass=abc.ABCMeta):  # pylint:disable=R0921
     def load(self, reload=False):  # pragma: no cover (abstract method)
         """Load the object's properties from its file."""
         # 1. Start implementations of this method with:
-        if self._loaded and not reload:
+        if os.stat(self.path).st_mtime == self._loaded and not reload:
             return
         # 2. Call self._read() and update properties here
         # 3. End implementations of this method with:
-        self._loaded = True
+        self._loaded = os.stat(self.path).st_mtime
 
     def _read(self, path):  # pragma: no cover (integration test)
         """Read text from the object's file.
@@ -263,7 +263,7 @@ class BaseFileObject(object, metaclass=abc.ABCMeta):  # pylint:disable=R0921
         """Format and save the object's properties to its file."""
         # 1. Call self._write() with the current properties here
         # 2. End implementations of this method with:
-        self._loaded = False
+        self._loaded = os.stat(self.path).st_mtime
         self.auto = True
 
     def _write(self, text, path):  # pragma: no cover (integration test)

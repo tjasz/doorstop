@@ -150,7 +150,7 @@ class Item(BaseValidatable, BaseFileObject):  # pylint: disable=R0902
 
     def load(self, reload=False):
         """Load the item's properties from its file."""
-        if self._loaded and not reload:
+        if os.stat(self.path).st_mtime == self._loaded and not reload:
             return
         log.debug("loading {}...".format(repr(self)))
         # Read text from file
@@ -180,7 +180,7 @@ class Item(BaseValidatable, BaseFileObject):  # pylint: disable=R0902
                     value = Text(value)
             self._data[key] = value
         # Set meta attributes
-        self._loaded = True
+        self._loaded = os.stat(self.path).st_mtime
 
     @edit_item
     def save(self):
@@ -193,7 +193,7 @@ class Item(BaseValidatable, BaseFileObject):  # pylint: disable=R0902
         # Save the YAML to file
         self._write(text, self.path)
         # Set meta attributes
-        self._loaded = False
+        self._loaded = os.stat(self.path).st_mtime
         self.auto = True
 
     # properties #############################################################
