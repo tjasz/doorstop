@@ -1,0 +1,2199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>doorstop.core package &mdash; Doorstop 0.8.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.8.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Doorstop 0.8.4 documentation" href="index.html" />
+    <link rel="up" title="doorstop package" href="doorstop.html" />
+    <link rel="next" title="doorstop.core.test package" href="doorstop.core.test.html" />
+    <link rel="prev" title="doorstop.cli.test package" href="doorstop.cli.test.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.core.test.html" title="doorstop.core.test package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.cli.test.html" title="doorstop.cli.test package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Doorstop 0.8.4 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="doorstop.html" accesskey="U">doorstop package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="doorstop-core-package">
+<h1>doorstop.core package<a class="headerlink" href="#doorstop-core-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="doorstop.core.test.html">doorstop.core.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_all">doorstop.core.test.test_all module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_builder">doorstop.core.test.test_builder module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_document">doorstop.core.test.test_document module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_exporter">doorstop.core.test.test_exporter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_importer">doorstop.core.test.test_importer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_item">doorstop.core.test.test_item module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_publisher">doorstop.core.test.test_publisher module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_tree">doorstop.core.test.test_tree module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test.test_types">doorstop.core.test.test_types module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.test.html#module-doorstop.core.test">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doorstop.core.vcs.html">doorstop.core.vcs package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="doorstop.core.vcs.test.html">doorstop.core.vcs.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="doorstop.core.vcs.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doorstop.core.vcs.test.html#module-doorstop.core.vcs.test.test_all">doorstop.core.vcs.test.test_all module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doorstop.core.vcs.test.html#module-doorstop.core.vcs.test.test_base">doorstop.core.vcs.test.test_base module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doorstop.core.vcs.test.html#module-doorstop.core.vcs.test.test_commands">doorstop.core.vcs.test.test_commands module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="doorstop.core.vcs.test.html#module-doorstop.core.vcs.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#module-doorstop.core.vcs.base">doorstop.core.vcs.base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#module-doorstop.core.vcs.git">doorstop.core.vcs.git module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#module-doorstop.core.vcs.mockvcs">doorstop.core.vcs.mockvcs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#module-doorstop.core.vcs.subversion">doorstop.core.vcs.subversion module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#module-doorstop.core.vcs.veracity">doorstop.core.vcs.veracity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="doorstop.core.vcs.html#module-doorstop.core.vcs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-doorstop.core.base">
+<span id="doorstop-core-base-module"></span><h2>doorstop.core.base module<a class="headerlink" href="#module-doorstop.core.base" title="Permalink to this headline">¶</a></h2>
+<p>Base classes and decorators for the doorstop.core package.</p>
+<dl class="class">
+<dt id="doorstop.core.base.BaseFileObject">
+<em class="property">class </em><code class="descclassname">doorstop.core.base.</code><code class="descname">BaseFileObject</code><a class="headerlink" href="#doorstop.core.base.BaseFileObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Abstract Base Class for objects whose attributes save to a file.</p>
+<p>For properties that are saved to a file, decorate their getters
+with <a class="reference internal" href="#doorstop.core.base.auto_load" title="doorstop.core.base.auto_load"><code class="xref py py-func docutils literal"><span class="pre">auto_load()</span></code></a> and their setters with <a class="reference internal" href="#doorstop.core.base.auto_save" title="doorstop.core.base.auto_save"><code class="xref py py-func docutils literal"><span class="pre">auto_save()</span></code></a>.</p>
+<dl class="attribute">
+<dt id="doorstop.core.base.BaseFileObject.auto">
+<code class="descname">auto</code><em class="property"> = True</em><a class="headerlink" href="#doorstop.core.base.BaseFileObject.auto" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.base.BaseFileObject.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.BaseFileObject.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the object&#8217;s file from the file system.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.base.BaseFileObject.extended">
+<code class="descname">extended</code><a class="headerlink" href="#doorstop.core.base.BaseFileObject.extended" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of all extended attribute names.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.base.BaseFileObject.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>name</em>, <em>default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.BaseFileObject.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an extended attribute.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> &#8211; name of extended attribute</li>
+<li><strong>default</strong> &#8211; value to return for missing attributes</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">value of extended attribute</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.base.BaseFileObject.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>reload=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.BaseFileObject.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the object&#8217;s properties from its file.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.base.BaseFileObject.relpath">
+<code class="descname">relpath</code><a class="headerlink" href="#doorstop.core.base.BaseFileObject.relpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s relative path string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.base.BaseFileObject.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.BaseFileObject.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format and save the object&#8217;s properties to its file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.base.BaseFileObject.set">
+<code class="descname">set</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.BaseFileObject.set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an extended attribute.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> &#8211; name of extended attribute</li>
+<li><strong>value</strong> &#8211; value to set</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.base.BaseValidatable">
+<em class="property">class </em><code class="descclassname">doorstop.core.base.</code><code class="descname">BaseValidatable</code><a class="headerlink" href="#doorstop.core.base.BaseValidatable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Abstract Base Class for objects that can be validated.</p>
+<dl class="method">
+<dt id="doorstop.core.base.BaseValidatable.get_issues">
+<code class="descname">get_issues</code><span class="sig-paren">(</span><em>document_hook=None</em>, <em>item_hook=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.BaseValidatable.get_issues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield all the objects&#8217;s issues.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>document_hook</strong> &#8211; function to call for custom document
+validation</li>
+<li><strong>item_hook</strong> &#8211; function to call for custom item validation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">generator of <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopWarning" title="doorstop.common.DoorstopWarning"><code class="xref py py-class docutils literal"><span class="pre">DoorstopWarning</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopInfo" title="doorstop.common.DoorstopInfo"><code class="xref py py-class docutils literal"><span class="pre">DoorstopInfo</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.base.BaseValidatable.issues">
+<code class="descname">issues</code><a class="headerlink" href="#doorstop.core.base.BaseValidatable.issues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of the item&#8217;s issues.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.base.BaseValidatable.validate">
+<code class="descname">validate</code><span class="sig-paren">(</span><em>document_hook=None</em>, <em>item_hook=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.BaseValidatable.validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the object for validity.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>document_hook</strong> &#8211; function to call for custom document
+validation</li>
+<li><strong>item_hook</strong> &#8211; function to call for custom item validation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">indication that the object is valid</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.add_document">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">add_document</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.add_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that return a new document.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.add_item">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">add_item</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.add_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that return a new item.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.auto_load">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">auto_load</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.auto_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that should automatically load from file.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.auto_save">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">auto_save</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.auto_save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that should automatically save to file.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.delete_document">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">delete_document</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.delete_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that return a deleted document.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.delete_item">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">delete_item</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.delete_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that return a deleted item.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.edit_document">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">edit_document</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.edit_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that return a modified document.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.base.edit_item">
+<code class="descclassname">doorstop.core.base.</code><code class="descname">edit_item</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.base.edit_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that return a modified item.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.builder">
+<span id="doorstop-core-builder-module"></span><h2>doorstop.core.builder module<a class="headerlink" href="#module-doorstop.core.builder" title="Permalink to this headline">¶</a></h2>
+<p>Functions to build a tree and access documents and items.</p>
+<dl class="function">
+<dt id="doorstop.core.builder.build">
+<code class="descclassname">doorstop.core.builder.</code><code class="descname">build</code><span class="sig-paren">(</span><em>cwd=None</em>, <em>root=None</em>, <em>request_next_number=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.builder.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a tree from the current working directory or explicit root.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cwd</strong> &#8211; current working directory</li>
+<li><strong>root</strong> &#8211; path to root of the working copy</li>
+<li><strong>request_next_number</strong> &#8211; server method to get a document&#8217;s next number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> when the tree
+cannot be built</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">new <a class="reference internal" href="#doorstop.core.tree.Tree" title="doorstop.core.tree.Tree"><code class="xref py py-class docutils literal"><span class="pre">Tree</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.builder.find_document">
+<code class="descclassname">doorstop.core.builder.</code><code class="descname">find_document</code><span class="sig-paren">(</span><em>prefix</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.builder.find_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find a document without an explicitly building a tree.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.builder.find_item">
+<code class="descclassname">doorstop.core.builder.</code><code class="descname">find_item</code><span class="sig-paren">(</span><em>uid</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.builder.find_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find an item without an explicitly building a tree.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.document">
+<span id="doorstop-core-document-module"></span><h2>doorstop.core.document module<a class="headerlink" href="#module-doorstop.core.document" title="Permalink to this headline">¶</a></h2>
+<p>Representation of a collection of items.</p>
+<dl class="class">
+<dt id="doorstop.core.document.Document">
+<em class="property">class </em><code class="descclassname">doorstop.core.document.</code><code class="descname">Document</code><span class="sig-paren">(</span><em>path</em>, <em>root='/home/travis/build/jacebrowning/doorstop/docs/sphinx'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.core.base.BaseValidatable" title="doorstop.core.base.BaseValidatable"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.base.BaseValidatable</span></code></a>, <a class="reference internal" href="#doorstop.core.base.BaseFileObject" title="doorstop.core.base.BaseFileObject"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.base.BaseFileObject</span></code></a></p>
+<p>Represents a document directory containing an outline of items.</p>
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.CONFIG">
+<code class="descname">CONFIG</code><em class="property"> = '.doorstop.yml'</em><a class="headerlink" href="#doorstop.core.document.Document.CONFIG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.DEFAULT_DIGITS">
+<code class="descname">DEFAULT_DIGITS</code><em class="property"> = 3</em><a class="headerlink" href="#doorstop.core.document.Document.DEFAULT_DIGITS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.DEFAULT_PREFIX">
+<code class="descname">DEFAULT_PREFIX</code><em class="property"> = Prefix('REQ')</em><a class="headerlink" href="#doorstop.core.document.Document.DEFAULT_PREFIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.DEFAULT_SEP">
+<code class="descname">DEFAULT_SEP</code><em class="property"> = ''</em><a class="headerlink" href="#doorstop.core.document.Document.DEFAULT_SEP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.INDEX">
+<code class="descname">INDEX</code><em class="property"> = 'index.yml'</em><a class="headerlink" href="#doorstop.core.document.Document.INDEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.SKIP">
+<code class="descname">SKIP</code><em class="property"> = '.doorstop.skip'</em><a class="headerlink" href="#doorstop.core.document.Document.SKIP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.add_item">
+<code class="descname">add_item</code><span class="sig-paren">(</span><em>number=None</em>, <em>level=None</em>, <em>reorder=True</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.add_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new item for the document and return it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>number</strong> &#8211; desired item number</li>
+<li><strong>level</strong> &#8211; desired item level</li>
+<li><strong>reorder</strong> &#8211; update levels of document items</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">added <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.config">
+<code class="descname">config</code><a class="headerlink" href="#doorstop.core.document.Document.config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the path to the document&#8217;s file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the document and its items.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.depth">
+<code class="descname">depth</code><a class="headerlink" href="#doorstop.core.document.Document.depth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the maximum item level depth.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.digits">
+<code class="descname">digits</code><a class="headerlink" href="#doorstop.core.document.Document.digits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the number of digits to use for new item UIDs.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.find_item">
+<code class="descname">find_item</code><span class="sig-paren">(</span><em>value</em>, <em>_kind=''</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.find_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an item by its UID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> &#8211; item or UID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the item
+cannot be found</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">matching <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.get_issues">
+<code class="descname">get_issues</code><span class="sig-paren">(</span><em>item_hook=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.get_issues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield all the document&#8217;s issues.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>item_hook</strong> &#8211; function to call for custom item validation</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">generator of <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopWarning" title="doorstop.common.DoorstopWarning"><code class="xref py py-class docutils literal"><span class="pre">DoorstopWarning</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopInfo" title="doorstop.common.DoorstopInfo"><code class="xref py py-class docutils literal"><span class="pre">DoorstopInfo</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.index">
+<code class="descname">index</code><a class="headerlink" href="#doorstop.core.document.Document.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the path to the document&#8217;s index if it exists else <cite>None</cite>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.items">
+<code class="descname">items</code><a class="headerlink" href="#doorstop.core.document.Document.items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an ordered list of items in the document.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>reload=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the document&#8217;s properties from its file.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.document.Document.new">
+<em class="property">static </em><code class="descname">new</code><span class="sig-paren">(</span><em>tree</em>, <em>path</em>, <em>root</em>, <em>prefix</em>, <em>sep=None</em>, <em>digits=None</em>, <em>parent=None</em>, <em>auto=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal method to create a new document.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tree</strong> &#8211; reference to tree that contains this document</li>
+<li><strong>path</strong> &#8211; path to directory for the new document</li>
+<li><strong>root</strong> &#8211; path to root of the project</li>
+<li><strong>prefix</strong> &#8211; prefix for the new document</li>
+<li><strong>sep</strong> &#8211; separator between prefix and numbers</li>
+<li><strong>digits</strong> &#8211; number of digits for the new document</li>
+<li><strong>parent</strong> &#8211; parent UID for the new document</li>
+<li><strong>auto</strong> &#8211; automatically save the document</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the document
+already exists</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">new <a class="reference internal" href="#doorstop.core.document.Document" title="doorstop.core.document.Document"><code class="xref py py-class docutils literal"><span class="pre">Document</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.next_number">
+<code class="descname">next_number</code><a class="headerlink" href="#doorstop.core.document.Document.next_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the next item number for the document.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.parent">
+<code class="descname">parent</code><a class="headerlink" href="#doorstop.core.document.Document.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the document&#8217;s parent document prefix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.prefix">
+<code class="descname">prefix</code><a class="headerlink" href="#doorstop.core.document.Document.prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the document&#8217;s prefix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.remove_item">
+<code class="descname">remove_item</code><span class="sig-paren">(</span><em>value</em>, <em>reorder=True</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.remove_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an item by its UID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> &#8211; item or UID</li>
+<li><strong>reorder</strong> &#8211; update levels of document items</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the item
+cannot be found</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">removed <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.reorder">
+<code class="descname">reorder</code><span class="sig-paren">(</span><em>manual=True</em>, <em>automatic=True</em>, <em>start=None</em>, <em>keep=None</em>, <em>_items=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.reorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reorder a document&#8217;s items.</p>
+<p>Two methods are using to create the outline order:</p>
+<ul class="simple">
+<li>manual: specify the order using an updated index file</li>
+<li>automatic: shift duplicate levels and compress gaps</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>manual</strong> &#8211; enable manual ordering using the index (if one exists)</li>
+<li><strong>automatic</strong> &#8211; enable automatic ordering (after manual ordering)</li>
+<li><strong>start</strong> &#8211; level to start numbering (None = use current start)</li>
+<li><strong>keep</strong> &#8211; item or UID to keep over duplicates</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.document.Document.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.document.Document.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the document&#8217;s properties to its file.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.sep">
+<code class="descname">sep</code><a class="headerlink" href="#doorstop.core.document.Document.sep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the prefix-number separator to use for new item UIDs.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.document.Document.skip">
+<code class="descname">skip</code><a class="headerlink" href="#doorstop.core.document.Document.skip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicate the document should be skipped.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.editor">
+<span id="doorstop-core-editor-module"></span><h2>doorstop.core.editor module<a class="headerlink" href="#module-doorstop.core.editor" title="Permalink to this headline">¶</a></h2>
+<p>&#8220;Functions to edit documents and items.</p>
+<dl class="function">
+<dt id="doorstop.core.editor.edit">
+<code class="descclassname">doorstop.core.editor.</code><code class="descname">edit</code><span class="sig-paren">(</span><em>path</em>, <em>tool=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.editor.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open a file and wait for the default editor to exit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> &#8211; path of file to open</li>
+<li><strong>tool</strong> &#8211; path of alternate editor</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">launched process</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.editor.launch">
+<code class="descclassname">doorstop.core.editor.</code><code class="descname">launch</code><span class="sig-paren">(</span><em>path</em>, <em>tool=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.editor.launch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open a file using the default editor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> &#8211; path of file to open</li>
+<li><strong>tool</strong> &#8211; path of alternate editor</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> no default editor
+or editor unavailable</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">launched process if long-running, else None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.exporter">
+<span id="doorstop-core-exporter-module"></span><h2>doorstop.core.exporter module<a class="headerlink" href="#module-doorstop.core.exporter" title="Permalink to this headline">¶</a></h2>
+<p>Functions to export documents and items.</p>
+<dl class="function">
+<dt id="doorstop.core.exporter.check">
+<code class="descclassname">doorstop.core.exporter.</code><code class="descname">check</code><span class="sig-paren">(</span><em>ext</em>, <em>get_lines_gen=False</em>, <em>get_file_func=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.exporter.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Confirm an extension is supported for export.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>get_lines_func</strong> &#8211; return a lines generator if available</li>
+<li><strong>get_file_func</strong> &#8211; return a file creator if available</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">doorstop.common.DoorstopError</span></code></a> for unknown formats</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">function requested if available</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.exporter.export">
+<code class="descclassname">doorstop.core.exporter.</code><code class="descname">export</code><span class="sig-paren">(</span><em>obj</em>, <em>path</em>, <em>ext=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.exporter.export" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export an object to a given format.</p>
+<p>The function can be called in two ways:</p>
+<ol class="arabic simple">
+<li>document or item-like object + output file path</li>
+<li>tree-like object + output directory path</li>
+</ol>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> &#8211; <ol class="arabic">
+<li>Item, list of Items, Document or (2) Tree</li>
+</ol>
+</li>
+<li><strong>path</strong> &#8211; <ol class="arabic">
+<li>output file path or (2) output directory path</li>
+</ol>
+</li>
+<li><strong>ext</strong> &#8211; file extension to override output extension</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">doorstop.common.DoorstopError</span></code></a> for unknown file formats</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">output location if files created, else None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.exporter.export_file">
+<code class="descclassname">doorstop.core.exporter.</code><code class="descname">export_file</code><span class="sig-paren">(</span><em>obj</em>, <em>path</em>, <em>ext=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.exporter.export_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a file object for an export in the specified format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> &#8211; Item, list of Items, or Document to export</li>
+<li><strong>path</strong> &#8211; output file location with desired extension</li>
+<li><strong>ext</strong> &#8211; file extension to override output path&#8217;s extension</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">doorstop.common.DoorstopError</span></code></a> for unknown file formats</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">path to created file</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.exporter.export_lines">
+<code class="descclassname">doorstop.core.exporter.</code><code class="descname">export_lines</code><span class="sig-paren">(</span><em>obj</em>, <em>ext='.yml'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.exporter.export_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield lines for an export in the specified format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> &#8211; Item, list of Items, or Document to export</li>
+<li><strong>ext</strong> &#8211; file extension to specify the output format</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">doorstop.common.DoorstopError</span></code></a> for unknown file formats</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">lines generator</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.importer">
+<span id="doorstop-core-importer-module"></span><h2>doorstop.core.importer module<a class="headerlink" href="#module-doorstop.core.importer" title="Permalink to this headline">¶</a></h2>
+<p>Functions to import exiting documents and items.</p>
+<dl class="function">
+<dt id="doorstop.core.importer.add_item">
+<code class="descclassname">doorstop.core.importer.</code><code class="descname">add_item</code><span class="sig-paren">(</span><em>prefix</em>, <em>uid</em>, <em>attrs=None</em>, <em>document=None</em>, <em>request_next_number=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.importer.add_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Doorstop document from existing document information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>prefix</strong> &#8211; previously imported document&#8217;s prefix</li>
+<li><strong>uid</strong> &#8211; existing item&#8217;s UID</li>
+<li><strong>attrs</strong> &#8211; dictionary of Doorstop and custom attributes</li>
+<li><strong>document</strong> &#8211; explicit document to add the item</li>
+<li><strong>request_next_number</strong> &#8211; server method to get a document&#8217;s next number</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">imported Item</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.importer.check">
+<code class="descclassname">doorstop.core.importer.</code><code class="descname">check</code><span class="sig-paren">(</span><em>ext</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.importer.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Confirm an extension is supported for import.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Raises DoorstopError:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">for unknown formats</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">file importer if available</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.importer.create_document">
+<code class="descclassname">doorstop.core.importer.</code><code class="descname">create_document</code><span class="sig-paren">(</span><em>prefix</em>, <em>path</em>, <em>parent=None</em>, <em>tree=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.importer.create_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Doorstop document from existing document information.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>prefix</strong> &#8211; existing document&#8217;s prefix (for new items)</li>
+<li><strong>path</strong> &#8211; new directory path to store this document&#8217;s items</li>
+<li><strong>parent</strong> &#8211; parent document&#8217;s prefix (if one will exist)</li>
+<li><strong>tree</strong> &#8211; explicit tree to add the document</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">imported Document</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.importer.import_file">
+<code class="descclassname">doorstop.core.importer.</code><code class="descname">import_file</code><span class="sig-paren">(</span><em>path</em>, <em>document</em>, <em>ext=None</em>, <em>mapping=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.importer.import_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import items from an exported file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> &#8211; input file location</li>
+<li><strong>document</strong> &#8211; document to import items</li>
+<li><strong>ext</strong> &#8211; file extension to override input path&#8217;s extension</li>
+<li><strong>mapping</strong> &#8211; dictionary mapping custom to standard attribute names</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Raises DoorstopError:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><p class="first">for unknown file formats</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">document with imported items</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.item">
+<span id="doorstop-core-item-module"></span><h2>doorstop.core.item module<a class="headerlink" href="#module-doorstop.core.item" title="Permalink to this headline">¶</a></h2>
+<p>Representation of an item in a document.</p>
+<dl class="class">
+<dt id="doorstop.core.item.Item">
+<em class="property">class </em><code class="descclassname">doorstop.core.item.</code><code class="descname">Item</code><span class="sig-paren">(</span><em>path</em>, <em>root='/home/travis/build/jacebrowning/doorstop/docs/sphinx'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.core.base.BaseValidatable" title="doorstop.core.base.BaseValidatable"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.base.BaseValidatable</span></code></a>, <a class="reference internal" href="#doorstop.core.base.BaseFileObject" title="doorstop.core.base.BaseFileObject"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.base.BaseFileObject</span></code></a></p>
+<p>Represents an item file with linkable text.</p>
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.DEFAULT_ACTIVE">
+<code class="descname">DEFAULT_ACTIVE</code><em class="property"> = True</em><a class="headerlink" href="#doorstop.core.item.Item.DEFAULT_ACTIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.DEFAULT_DERIVED">
+<code class="descname">DEFAULT_DERIVED</code><em class="property"> = False</em><a class="headerlink" href="#doorstop.core.item.Item.DEFAULT_DERIVED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.DEFAULT_LEVEL">
+<code class="descname">DEFAULT_LEVEL</code><em class="property"> = Level('1', heading=True)</em><a class="headerlink" href="#doorstop.core.item.Item.DEFAULT_LEVEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.DEFAULT_NORMATIVE">
+<code class="descname">DEFAULT_NORMATIVE</code><em class="property"> = True</em><a class="headerlink" href="#doorstop.core.item.Item.DEFAULT_NORMATIVE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.DEFAULT_REF">
+<code class="descname">DEFAULT_REF</code><em class="property"> = ''</em><a class="headerlink" href="#doorstop.core.item.Item.DEFAULT_REF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.DEFAULT_REVIEWED">
+<code class="descname">DEFAULT_REVIEWED</code><em class="property"> = Stamp(None)</em><a class="headerlink" href="#doorstop.core.item.Item.DEFAULT_REVIEWED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.DEFAULT_TEXT">
+<code class="descname">DEFAULT_TEXT</code><em class="property"> = ''</em><a class="headerlink" href="#doorstop.core.item.Item.DEFAULT_TEXT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.EXTENSIONS">
+<code class="descname">EXTENSIONS</code><em class="property"> = ('.yml', '.yaml')</em><a class="headerlink" href="#doorstop.core.item.Item.EXTENSIONS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.active">
+<code class="descname">active</code><a class="headerlink" href="#doorstop.core.item.Item.active" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s active status.</p>
+<p>An inactive item will not be validated. Inactive items are
+intended to be used for:</p>
+<ul class="simple">
+<li>future requirements</li>
+<li>temporarily disabled requirements or tests</li>
+<li>externally implemented requirements</li>
+<li>etc.</li>
+</ul>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.child_documents">
+<code class="descname">child_documents</code><a class="headerlink" href="#doorstop.core.item.Item.child_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of documents that should link to this item&#8217;s document.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of found documents</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.child_items">
+<code class="descname">child_items</code><a class="headerlink" href="#doorstop.core.item.Item.child_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of items that link to this item.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>find_all</strong> &#8211; find all items (not just the first) before returning</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of found items</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.child_links">
+<code class="descname">child_links</code><a class="headerlink" href="#doorstop.core.item.Item.child_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of item UIDs that link to this item (reverse links).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>find_all</strong> &#8211; find all items (not just the first) before returning</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of found item UIDs</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.clear">
+<code class="descname">clear</code><span class="sig-paren">(</span><em>_inverse=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear suspect links.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.cleared">
+<code class="descname">cleared</code><a class="headerlink" href="#doorstop.core.item.Item.cleared" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicate if no links are suspect.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.data">
+<code class="descname">data</code><a class="headerlink" href="#doorstop.core.item.Item.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all the item&#8217;s data formatted for YAML dumping.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>path=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the item.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.depth">
+<code class="descname">depth</code><a class="headerlink" href="#doorstop.core.item.Item.depth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s heading order based on it&#8217;s level.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.derived">
+<code class="descname">derived</code><a class="headerlink" href="#doorstop.core.item.Item.derived" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s derived status.</p>
+<p>A derived item does not have links to items in its parent
+document, but should still be linked to by items in its child
+documents.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.edit">
+<code class="descname">edit</code><span class="sig-paren">(</span><em>tool=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the item for editing.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tool</strong> &#8211; path of alternate editor</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.find_child_documents">
+<code class="descname">find_child_documents</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.find_child_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of documents that should link to this item&#8217;s document.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of found documents</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.find_child_items">
+<code class="descname">find_child_items</code><span class="sig-paren">(</span><em>find_all=True</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.find_child_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of items that link to this item.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>find_all</strong> &#8211; find all items (not just the first) before returning</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of found items</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.find_child_links">
+<code class="descname">find_child_links</code><span class="sig-paren">(</span><em>find_all=True</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.find_child_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of item UIDs that link to this item (reverse links).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>find_all</strong> &#8211; find all items (not just the first) before returning</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of found item UIDs</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.find_ref">
+<code class="descname">find_ref</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.find_ref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the external file reference and line number.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> when no
+reference is found</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">relative path to file or None (when no reference
+set),
+line number (when found in file) or None (when found as
+filename) or None (when no reference set)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.get_issues">
+<code class="descname">get_issues</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.get_issues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield all the item&#8217;s issues.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">generator of <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopWarning" title="doorstop.common.DoorstopWarning"><code class="xref py py-class docutils literal"><span class="pre">DoorstopWarning</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopInfo" title="doorstop.common.DoorstopInfo"><code class="xref py py-class docutils literal"><span class="pre">DoorstopInfo</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.heading">
+<code class="descname">heading</code><a class="headerlink" href="#doorstop.core.item.Item.heading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicate if the item is a heading.</p>
+<p>Headings have a level that ends in zero and are non-normative.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.level">
+<code class="descname">level</code><a class="headerlink" href="#doorstop.core.item.Item.level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s level.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.link">
+<code class="descname">link</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new link to another item UID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> &#8211; item or UID</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.links">
+<code class="descname">links</code><a class="headerlink" href="#doorstop.core.item.Item.links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of the item UIDs this item links to.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>reload=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the item&#8217;s properties from its file.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.item.Item.new">
+<em class="property">static </em><code class="descname">new</code><span class="sig-paren">(</span><em>tree</em>, <em>document</em>, <em>path</em>, <em>root</em>, <em>uid</em>, <em>level=None</em>, <em>auto=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Internal method to create a new item.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>tree</strong> &#8211; reference to the tree that contains this item</li>
+<li><strong>document</strong> &#8211; reference to document that contains this item</li>
+<li><strong>path</strong> &#8211; path to directory for the new item</li>
+<li><strong>root</strong> &#8211; path to root of the project</li>
+<li><strong>uid</strong> &#8211; UID for the new item</li>
+<li><strong>level</strong> &#8211; level for the new item</li>
+<li><strong>auto</strong> &#8211; automatically save the item</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the item
+already exists</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">new <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.normative">
+<code class="descname">normative</code><a class="headerlink" href="#doorstop.core.item.Item.normative" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s normative status.</p>
+<p>A non-normative item should not have or be linked to.
+Non-normative items are intended to be used for:</p>
+<ul class="simple">
+<li>headings</li>
+<li>comments</li>
+<li>etc.</li>
+</ul>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.number">
+<code class="descname">number</code><a class="headerlink" href="#doorstop.core.item.Item.number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item UID&#8217;s number.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.parent_documents">
+<code class="descname">parent_documents</code><a class="headerlink" href="#doorstop.core.item.Item.parent_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of documents that this item&#8217;s document should link to.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">A document only has one parent.</p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.parent_items">
+<code class="descname">parent_items</code><a class="headerlink" href="#doorstop.core.item.Item.parent_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of items that this item links to.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.parent_links">
+<code class="descname">parent_links</code><a class="headerlink" href="#doorstop.core.item.Item.parent_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of the item UIDs this item links to.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.prefix">
+<code class="descname">prefix</code><a class="headerlink" href="#doorstop.core.item.Item.prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item UID&#8217;s prefix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.ref">
+<code class="descname">ref</code><a class="headerlink" href="#doorstop.core.item.Item.ref" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s external file reference.</p>
+<p>An external reference can be part of a line in a text file or
+the filename of any type of file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.review">
+<code class="descname">review</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.review" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mark the item as reviewed.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.reviewed">
+<code class="descname">reviewed</code><a class="headerlink" href="#doorstop.core.item.Item.reviewed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicate if the item has been reviewed.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.save">
+<code class="descname">save</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format and save the item&#8217;s properties to its file.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.stamp">
+<code class="descname">stamp</code><span class="sig-paren">(</span><em>links=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.stamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hash the item&#8217;s key content for later comparison.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.text">
+<code class="descname">text</code><a class="headerlink" href="#doorstop.core.item.Item.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s text.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.Item.uid">
+<code class="descname">uid</code><a class="headerlink" href="#doorstop.core.item.Item.uid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s UID.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.Item.unlink">
+<code class="descname">unlink</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.Item.unlink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an existing link by item UID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> &#8211; item or UID</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.item.UnknownItem">
+<em class="property">class </em><code class="descclassname">doorstop.core.item.</code><code class="descname">UnknownItem</code><span class="sig-paren">(</span><em>value</em>, <em>spec=&lt;class 'doorstop.core.item.Item'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.UnknownItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Represents an unknown item, which doesn&#8217;t have a path.</p>
+<dl class="attribute">
+<dt id="doorstop.core.item.UnknownItem.UNKNOWN_PATH">
+<code class="descname">UNKNOWN_PATH</code><em class="property"> = '???'</em><a class="headerlink" href="#doorstop.core.item.UnknownItem.UNKNOWN_PATH" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.UnknownItem.normative">
+<code class="descname">normative</code><em class="property"> = False</em><a class="headerlink" href="#doorstop.core.item.UnknownItem.normative" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.UnknownItem.number">
+<code class="descname">number</code><a class="headerlink" href="#doorstop.core.item.UnknownItem.number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item UID&#8217;s number.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.UnknownItem.prefix">
+<code class="descname">prefix</code><a class="headerlink" href="#doorstop.core.item.UnknownItem.prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item UID&#8217;s prefix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.UnknownItem.relpath">
+<code class="descname">relpath</code><a class="headerlink" href="#doorstop.core.item.UnknownItem.relpath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the unknown item&#8217;s relative path string.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.item.UnknownItem.stamp">
+<code class="descname">stamp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.UnknownItem.stamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an empty stamp.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.item.UnknownItem.uid">
+<code class="descname">uid</code><a class="headerlink" href="#doorstop.core.item.UnknownItem.uid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the item&#8217;s UID.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.item.requires_document">
+<code class="descclassname">doorstop.core.item.</code><code class="descname">requires_document</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.requires_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that require a document reference.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.item.requires_tree">
+<code class="descclassname">doorstop.core.item.</code><code class="descname">requires_tree</code><span class="sig-paren">(</span><em>func</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.item.requires_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator for methods that require a tree reference.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.publisher">
+<span id="doorstop-core-publisher-module"></span><h2>doorstop.core.publisher module<a class="headerlink" href="#module-doorstop.core.publisher" title="Permalink to this headline">¶</a></h2>
+<p>Functions to publish documents and items.</p>
+<dl class="function">
+<dt id="doorstop.core.publisher.check">
+<code class="descclassname">doorstop.core.publisher.</code><code class="descname">check</code><span class="sig-paren">(</span><em>ext</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.publisher.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Confirm an extension is supported for publish.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">doorstop.common.DoorstopError</span></code></a> for unknown formats</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">lines generator if available</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.publisher.publish">
+<code class="descclassname">doorstop.core.publisher.</code><code class="descname">publish</code><span class="sig-paren">(</span><em>obj</em>, <em>path</em>, <em>ext=None</em>, <em>linkify=None</em>, <em>index=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.publisher.publish" title="Permalink to this definition">¶</a></dt>
+<dd><p>Publish an object to a given format.</p>
+<p>The function can be called in two ways:</p>
+<ol class="arabic simple">
+<li>document or item-like object + output file path</li>
+<li>tree-like object + output directory path</li>
+</ol>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> &#8211; <ol class="arabic">
+<li>Item, list of Items, Document or (2) Tree</li>
+</ol>
+</li>
+<li><strong>path</strong> &#8211; <ol class="arabic">
+<li>output file path or (2) output directory path</li>
+</ol>
+</li>
+<li><strong>ext</strong> &#8211; file extension to override output extension</li>
+<li><strong>linkify</strong> &#8211; turn links into hyperlinks (for Markdown or HTML)</li>
+<li><strong>index</strong> &#8211; create an index.html (for HTML)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">doorstop.common.DoorstopError</span></code></a> for unknown file formats</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">output location if files created, else None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.publisher.publish_lines">
+<code class="descclassname">doorstop.core.publisher.</code><code class="descname">publish_lines</code><span class="sig-paren">(</span><em>obj</em>, <em>ext='.txt'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.publisher.publish_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield lines for a report in the specified format.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj</strong> &#8211; Item, list of Items, or Document to publish</li>
+<li><strong>ext</strong> &#8211; file extension to specify the output format</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">doorstop.common.DoorstopError</span></code></a> for unknown file formats</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.tree">
+<span id="doorstop-core-tree-module"></span><h2>doorstop.core.tree module<a class="headerlink" href="#module-doorstop.core.tree" title="Permalink to this headline">¶</a></h2>
+<p>Representation of a hierarchy of documents.</p>
+<dl class="class">
+<dt id="doorstop.core.tree.Tree">
+<em class="property">class </em><code class="descclassname">doorstop.core.tree.</code><code class="descname">Tree</code><span class="sig-paren">(</span><em>document</em>, <em>parent=None</em>, <em>root=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.core.base.BaseValidatable" title="doorstop.core.base.BaseValidatable"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.base.BaseValidatable</span></code></a></p>
+<p>A bidirectional tree structure to store a hierarchy of documents.</p>
+<p>Although requirements link &#8220;upwards&#8221;, bidirectionality simplifies
+document processing and validation.</p>
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.add_item">
+<code class="descname">add_item</code><span class="sig-paren">(</span><em>value</em>, <em>number=None</em>, <em>level=None</em>, <em>reorder=True</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.add_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new item to an existing document by prefix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> &#8211; document or prefix</li>
+<li><strong>number</strong> &#8211; desired item number</li>
+<li><strong>level</strong> &#8211; desired item level</li>
+<li><strong>reorder</strong> &#8211; update levels of document items</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the item
+cannot be created</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">newly created <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.create_document">
+<code class="descname">create_document</code><span class="sig-paren">(</span><em>path</em>, <em>value</em>, <em>sep=None</em>, <em>digits=None</em>, <em>parent=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.create_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new document and add it to the tree.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> &#8211; directory path for the new document</li>
+<li><strong>value</strong> &#8211; document or prefix</li>
+<li><strong>sep</strong> &#8211; separator between prefix and numbers</li>
+<li><strong>digits</strong> &#8211; number of digits for the document&#8217;s numbers</li>
+<li><strong>parent</strong> &#8211; parent document&#8217;s prefix</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the
+document cannot be created</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">newly created and placed document
+<a class="reference internal" href="#doorstop.core.document.Document" title="doorstop.core.document.Document"><code class="xref py py-class docutils literal"><span class="pre">Document</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the tree and its documents and items.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.tree.Tree.documents">
+<code class="descname">documents</code><a class="headerlink" href="#doorstop.core.tree.Tree.documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an list of documents in the tree.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.draw">
+<code class="descname">draw</code><span class="sig-paren">(</span><em>encoding=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the tree structure as text.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>encoding</strong> &#8211; <p>limit character set to:</p>
+<ul class="simple">
+<li><cite>&#8216;utf-8&#8217;</cite> - all characters</li>
+<li><cite>&#8216;cp437&#8217;</cite> - Code Page 437 characters</li>
+<li>(other) - ACSII characters</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.edit_item">
+<code class="descname">edit_item</code><span class="sig-paren">(</span><em>uid</em>, <em>tool=None</em>, <em>launch=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.edit_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open an item for editing by UID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>uid</strong> &#8211; item&#8217;s UID (or item)</li>
+<li><strong>tool</strong> &#8211; alternative text editor to open the item</li>
+<li><strong>launch</strong> &#8211; open the text editor</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the item
+cannot be found</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">edited <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.find_document">
+<code class="descname">find_document</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.find_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a document by its prefix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> &#8211; document or prefix</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the document
+cannot be found</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">matching <a class="reference internal" href="#doorstop.core.document.Document" title="doorstop.core.document.Document"><code class="xref py py-class docutils literal"><span class="pre">Document</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.find_item">
+<code class="descname">find_item</code><span class="sig-paren">(</span><em>value</em>, <em>_kind=''</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.find_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an item by its UID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> &#8211; item or UID</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the item
+cannot be found</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">matching <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.tree.Tree.from_list">
+<em class="property">static </em><code class="descname">from_list</code><span class="sig-paren">(</span><em>documents</em>, <em>root=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.from_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize a new tree from a list of documents.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>documents</strong> &#8211; list of <a class="reference internal" href="#doorstop.core.document.Document" title="doorstop.core.document.Document"><code class="xref py py-class docutils literal"><span class="pre">Document</span></code></a></li>
+<li><strong>root</strong> &#8211; path to root of the project</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> when the tree
+cannot be built</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">new <a class="reference internal" href="#doorstop.core.tree.Tree" title="doorstop.core.tree.Tree"><code class="xref py py-class docutils literal"><span class="pre">Tree</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.get_issues">
+<code class="descname">get_issues</code><span class="sig-paren">(</span><em>document_hook=None</em>, <em>item_hook=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.get_issues" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield all the tree&#8217;s issues.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>document_hook</strong> &#8211; function to call for custom document validation</li>
+<li><strong>item_hook</strong> &#8211; function to call for custom item validation</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">generator of <a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopWarning" title="doorstop.common.DoorstopWarning"><code class="xref py py-class docutils literal"><span class="pre">DoorstopWarning</span></code></a>,
+<a class="reference internal" href="doorstop.html#doorstop.common.DoorstopInfo" title="doorstop.common.DoorstopInfo"><code class="xref py py-class docutils literal"><span class="pre">DoorstopInfo</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.get_traceability">
+<code class="descname">get_traceability</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.get_traceability" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return sorted rows of traceability slices.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">list of list of <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a> or <cite>None</cite></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.link_items">
+<code class="descname">link_items</code><span class="sig-paren">(</span><em>cid</em>, <em>pid</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.link_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new link between two items by UIDs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cid</strong> &#8211; child item&#8217;s UID (or child item)</li>
+<li><strong>pid</strong> &#8211; parent item&#8217;s UID (or parent item)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the link
+cannot be created</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">child <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a>,
+parent <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>reload=False</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the tree&#8217;s documents and items.</p>
+<p>Unlike the <a class="reference internal" href="#doorstop.core.document.Document" title="doorstop.core.document.Document"><code class="xref py py-class docutils literal"><span class="pre">Document</span></code></a> and
+<a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a> class, this load method is not
+used internally. Its purpose is to force the loading of
+content in large trees where lazy loading may cause long delays
+late in processing.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.remove_item">
+<code class="descname">remove_item</code><span class="sig-paren">(</span><em>value</em>, <em>reorder=True</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.remove_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove an item from a document by UID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>value</strong> &#8211; item or UID</li>
+<li><strong>reorder</strong> &#8211; update levels of document items</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the item
+cannot be removed</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">removed <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.tree.Tree.unlink_items">
+<code class="descname">unlink_items</code><span class="sig-paren">(</span><em>cid</em>, <em>pid</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.tree.Tree.unlink_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a link between two items by UIDs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>cid</strong> &#8211; child item&#8217;s UID (or child item)</li>
+<li><strong>pid</strong> &#8211; parent item&#8217;s UID (or parent item)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><a class="reference internal" href="doorstop.html#doorstop.common.DoorstopError" title="doorstop.common.DoorstopError"><code class="xref py py-class docutils literal"><span class="pre">DoorstopError</span></code></a> if the link
+cannot be removed</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">child <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a>,
+parent <a class="reference internal" href="#doorstop.core.item.Item" title="doorstop.core.item.Item"><code class="xref py py-class docutils literal"><span class="pre">Item</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.tree.Tree.vcs">
+<code class="descname">vcs</code><a class="headerlink" href="#doorstop.core.tree.Tree.vcs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the working copy.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.types">
+<span id="doorstop-core-types-module"></span><h2>doorstop.core.types module<a class="headerlink" href="#module-doorstop.core.types" title="Permalink to this headline">¶</a></h2>
+<p>Common classes and functions for the <cite>doorstop.core</cite> package.</p>
+<dl class="class">
+<dt id="doorstop.core.types.Level">
+<em class="property">class </em><code class="descclassname">doorstop.core.types.</code><code class="descname">Level</code><span class="sig-paren">(</span><em>value=None</em>, <em>heading=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Variable-length numerical outline level values.</p>
+<p>Level values cannot contain zeros. Zeros are reserved for
+identifying &#8220;heading&#8221; levels when written to file.</p>
+<dl class="method">
+<dt id="doorstop.core.types.Level.copy">
+<code class="descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Level.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a copy of the level.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Level.load_level">
+<em class="property">static </em><code class="descname">load_level</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Level.load_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an iterable, number, or level string to a tuple.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">load_level</span><span class="p">(</span><span class="s">&quot;1.2.3&quot;</span><span class="p">)</span>
+<span class="go">[1, 2, 3]</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">load_level</span><span class="p">([</span><span class="s">&#39;4&#39;</span><span class="p">,</span> <span class="s">&#39;5&#39;</span><span class="p">])</span>
+<span class="go">[4, 5]</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">load_level</span><span class="p">(</span><span class="mf">4.2</span><span class="p">)</span>
+<span class="go">[4, 2]</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">load_level</span><span class="p">([</span><span class="mi">7</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="go">[7, 0]</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">load_level</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">[1]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Level.save_level">
+<em class="property">static </em><code class="descname">save_level</code><span class="sig-paren">(</span><em>parts</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Level.save_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a level&#8217;s part into non-quoted YAML value.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">save_level</span><span class="p">((</span><span class="mi">1</span><span class="p">,))</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">save_level</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="go">1.0</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Level</span><span class="o">.</span><span class="n">save_level</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="go">&#39;1.0.0&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.Level.value">
+<code class="descname">value</code><a class="headerlink" href="#doorstop.core.types.Level.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a tuple for the level&#8217;s value with heading indications.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.Level.yaml">
+<code class="descname">yaml</code><a class="headerlink" href="#doorstop.core.types.Level.yaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value to be used in YAML dumping.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.types.Prefix">
+<em class="property">class </em><code class="descclassname">doorstop.core.types.</code><code class="descname">Prefix</code><a class="headerlink" href="#doorstop.core.types.Prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">str</span></code></p>
+<p>Unique document prefixes.</p>
+<dl class="attribute">
+<dt id="doorstop.core.types.Prefix.UNKNOWN_MESSGE">
+<code class="descname">UNKNOWN_MESSGE</code><em class="property"> = 'no document with prefix: {}'</em><a class="headerlink" href="#doorstop.core.types.Prefix.UNKNOWN_MESSGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Prefix.load_prefix">
+<em class="property">static </em><code class="descname">load_prefix</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Prefix.load_prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a value to a prefix.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Prefix</span><span class="o">.</span><span class="n">load_prefix</span><span class="p">(</span><span class="s">&quot;abc 123&quot;</span><span class="p">)</span>
+<span class="go">&#39;abc&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.Prefix.short">
+<code class="descname">short</code><a class="headerlink" href="#doorstop.core.types.Prefix.short" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a shortened version of the prefix.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.types.Reference">
+<em class="property">class </em><code class="descclassname">doorstop.core.types.</code><code class="descname">Reference</code><a class="headerlink" href="#doorstop.core.types.Reference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>External reference to a file or lines in a file.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.types.Stamp">
+<em class="property">class </em><code class="descclassname">doorstop.core.types.</code><code class="descname">Stamp</code><span class="sig-paren">(</span><em>*values</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Stamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Hashed content for change tracking.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>values</strong> &#8211; <p>one of the following:</p>
+<ul class="simple">
+<li>objects to hash as strings</li>
+<li>existing string stamp</li>
+<li><cite>True</cite> - manually-confirmed matching hash, to be replaced later</li>
+<li><cite>False</cite> | <cite>None</cite> | (nothing) - manually-confirmed mismatching hash</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Stamp.digest">
+<em class="property">static </em><code class="descname">digest</code><span class="sig-paren">(</span><em>*values</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Stamp.digest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hash the values for later comparison.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.Stamp.yaml">
+<code class="descname">yaml</code><a class="headerlink" href="#doorstop.core.types.Stamp.yaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value to be used in YAML dumping.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.types.Text">
+<em class="property">class </em><code class="descclassname">doorstop.core.types.</code><code class="descname">Text</code><a class="headerlink" href="#doorstop.core.types.Text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">str</span></code></p>
+<p>Markdown text paragraph.</p>
+<dl class="attribute">
+<dt id="doorstop.core.types.Text.RE_MARKDOWN_SPACES">
+<code class="descname">RE_MARKDOWN_SPACES</code><em class="property"> = &lt;_sre.SRE_Pattern object at 0x1272260&gt;</em><a class="headerlink" href="#doorstop.core.types.Text.RE_MARKDOWN_SPACES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.Text.RE_SENTENCE_BOUNDARIES">
+<code class="descname">RE_SENTENCE_BOUNDARIES</code><em class="property"> = &lt;_sre.SRE_Pattern object at 0x126e020&gt;</em><a class="headerlink" href="#doorstop.core.types.Text.RE_SENTENCE_BOUNDARIES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Text.join">
+<em class="property">static </em><code class="descname">join</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Text.join" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert single newlines (ignored by Markdown) to spaces.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s">&quot;abc</span><span class="se">\n</span><span class="s">123&quot;</span><span class="p">)</span>
+<span class="go">&#39;abc 123&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s">&quot;abc</span><span class="se">\n\n</span><span class="s">123&quot;</span><span class="p">)</span>
+<span class="go">&#39;abc\n\n123&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s">&quot;abc </span><span class="se">\n</span><span class="s">123&quot;</span><span class="p">)</span>
+<span class="go">&#39;abc 123&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Text.load_text">
+<em class="property">static </em><code class="descname">load_text</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Text.load_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert dumped text to the original string.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">load_text</span><span class="p">(</span><span class="s">&quot;abc</span><span class="se">\n</span><span class="s">def&quot;</span><span class="p">)</span>
+<span class="go">&#39;abc def&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">load_text</span><span class="p">(</span><span class="s">&quot;list:</span><span class="se">\n\n</span><span class="s">- a</span><span class="se">\n</span><span class="s">- b</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="go">&#39;list:\n\n- a\n- b&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Text.save_text">
+<em class="property">static </em><code class="descname">save_text</code><span class="sig-paren">(</span><em>text</em>, <em>end='\n'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Text.save_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Break a string at sentences and dump as wrapped literal YAML.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Text.sbd">
+<em class="property">static </em><code class="descname">sbd</code><span class="sig-paren">(</span><em>text</em>, <em>end='\n'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Text.sbd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace sentence boundaries with newlines and append a newline.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>text</strong> &#8211; string to line break at sentences</li>
+<li><strong>end</strong> &#8211; appended to the end of the update text</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">sbd</span><span class="p">(</span><span class="s">&quot;Hello, world!&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+<span class="go">&#39;Hello, world!&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">sbd</span><span class="p">(</span><span class="s">&quot;Hello, world! How are you? I&#39;m fine. Good.&quot;</span><span class="p">)</span>
+<span class="go">&quot;Hello, world!\nHow are you?\nI&#39;m fine.\nGood.\n&quot;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.Text.wrap">
+<em class="property">static </em><code class="descname">wrap</code><span class="sig-paren">(</span><em>text</em>, <em>width=79</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.Text.wrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrap lines of text to the maximum line length.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="s">&quot;Hello, world!&quot;</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="go">&#39;Hello,\nworld!&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Text</span><span class="o">.</span><span class="n">wrap</span><span class="p">(</span><span class="s">&quot;How are you?</span><span class="se">\n</span><span class="s">I&#39;m fine.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="go">&quot;How are you?\nI&#39;m fine.\n&quot;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.Text.yaml">
+<code class="descname">yaml</code><a class="headerlink" href="#doorstop.core.types.Text.yaml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the value to be used in YAML dumping.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.types.UID">
+<em class="property">class </em><code class="descclassname">doorstop.core.types.</code><code class="descname">UID</code><span class="sig-paren">(</span><em>*values</em>, <em>stamp=None</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.UID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Unique item ID built from document prefix and number.</p>
+<dl class="attribute">
+<dt id="doorstop.core.types.UID.UNKNOWN_MESSAGE">
+<code class="descname">UNKNOWN_MESSAGE</code><em class="property"> = 'no{k} item with UID: {u}'</em><a class="headerlink" href="#doorstop.core.types.UID.UNKNOWN_MESSAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.types.UID.check">
+<code class="descname">check</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.UID.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify an UID is valid.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.UID.join_uid">
+<em class="property">static </em><code class="descname">join_uid</code><span class="sig-paren">(</span><em>prefix</em>, <em>sep</em>, <em>number</em>, <em>digits</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.UID.join_uid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Join the parts of an item&#8217;s UID into a string.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">UID</span><span class="o">.</span><span class="n">join_uid</span><span class="p">(</span><span class="s">&#39;ABC&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="go">&#39;ABC00123&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">UID</span><span class="o">.</span><span class="n">join_uid</span><span class="p">(</span><span class="s">&#39;REQ.H&#39;</span><span class="p">,</span> <span class="s">&#39;-&#39;</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">&#39;REQ.H-0042&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">UID</span><span class="o">.</span><span class="n">join_uid</span><span class="p">(</span><span class="s">&#39;ABC&#39;</span><span class="p">,</span> <span class="s">&#39;-&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">&#39;ABC-123&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.UID.number">
+<code class="descname">number</code><a class="headerlink" href="#doorstop.core.types.UID.number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the UID&#8217;s number.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.UID.prefix">
+<code class="descname">prefix</code><a class="headerlink" href="#doorstop.core.types.UID.prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the UID&#8217;s prefix.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.UID.short">
+<code class="descname">short</code><a class="headerlink" href="#doorstop.core.types.UID.short" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a shortened version of the UID.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doorstop.core.types.UID.split_uid">
+<em class="property">static </em><code class="descname">split_uid</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.UID.split_uid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split an item&#8217;s UID string into a prefix and number.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">UID</span><span class="o">.</span><span class="n">split_uid</span><span class="p">(</span><span class="s">&#39;ABC00123&#39;</span><span class="p">)</span>
+<span class="go">(&#39;ABC&#39;, 123)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">UID</span><span class="o">.</span><span class="n">split_uid</span><span class="p">(</span><span class="s">&#39;ABC.HLR_01-00123&#39;</span><span class="p">)</span>
+<span class="go">(&#39;ABC.HLR_01&#39;, 123)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">UID</span><span class="o">.</span><span class="n">split_uid</span><span class="p">(</span><span class="s">&#39;REQ2-001&#39;</span><span class="p">)</span>
+<span class="go">(&#39;REQ2&#39;, 1)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.types.UID.string">
+<code class="descname">string</code><a class="headerlink" href="#doorstop.core.types.UID.string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the UID and stamp to a single string.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.types.is_document">
+<code class="descclassname">doorstop.core.types.</code><code class="descname">is_document</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.is_document" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if the object is a document-like.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.types.is_item">
+<code class="descclassname">doorstop.core.types.</code><code class="descname">is_item</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.is_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if the object is item-like.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.types.is_tree">
+<code class="descclassname">doorstop.core.types.</code><code class="descname">is_tree</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.is_tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if the object is a tree-like.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.types.iter_documents">
+<code class="descclassname">doorstop.core.types.</code><code class="descname">iter_documents</code><span class="sig-paren">(</span><em>obj</em>, <em>path</em>, <em>ext</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.iter_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterator if documents from a tree or document-like object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.types.iter_items">
+<code class="descclassname">doorstop.core.types.</code><code class="descname">iter_items</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.iter_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterator of items from from an item, list, or document.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="doorstop.core.types.to_bool">
+<code class="descclassname">doorstop.core.types.</code><code class="descname">to_bool</code><span class="sig-paren">(</span><em>obj</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.types.to_bool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a boolean-like object.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">to_bool</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">to_bool</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">to_bool</span><span class="p">(</span><span class="s">&#39; True &#39;</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">to_bool</span><span class="p">(</span><span class="s">&#39;F&#39;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-doorstop.core" title="Permalink to this headline">¶</a></h2>
+<p>Core package for Doorstop.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">doorstop.core package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.base">doorstop.core.base module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.builder">doorstop.core.builder module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.document">doorstop.core.document module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.editor">doorstop.core.editor module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.exporter">doorstop.core.exporter module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.importer">doorstop.core.importer module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.item">doorstop.core.item module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.publisher">doorstop.core.publisher module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.tree">doorstop.core.tree module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.types">doorstop.core.types module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="doorstop.cli.test.html"
+                        title="previous chapter">doorstop.cli.test package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="doorstop.core.test.html"
+                        title="next chapter">doorstop.core.test package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/doorstop.core.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.core.test.html" title="doorstop.core.test package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.cli.test.html" title="doorstop.cli.test package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Doorstop 0.8.4 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="doorstop.html" >doorstop package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, Jace Browning.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>

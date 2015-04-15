@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>doorstop.core.vcs.test package &mdash; Doorstop 0.8.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.8.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Doorstop 0.8.4 documentation" href="index.html" />
+    <link rel="up" title="doorstop.core.vcs package" href="doorstop.core.vcs.html" />
+    <link rel="next" title="doorstop.gui package" href="doorstop.gui.html" />
+    <link rel="prev" title="doorstop.core.vcs package" href="doorstop.core.vcs.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.gui.html" title="doorstop.gui package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.core.vcs.html" title="doorstop.core.vcs package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Doorstop 0.8.4 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="doorstop.html" >doorstop package</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="doorstop.core.html" >doorstop.core package</a> &raquo;</li>
+          <li class="nav-item nav-item-4"><a href="doorstop.core.vcs.html" accesskey="U">doorstop.core.vcs package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="doorstop-core-vcs-test-package">
+<h1>doorstop.core.vcs.test package<a class="headerlink" href="#doorstop-core-vcs-test-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-doorstop.core.vcs.test.test_all">
+<span id="doorstop-core-vcs-test-test-all-module"></span><h2>doorstop.core.vcs.test.test_all module<a class="headerlink" href="#module-doorstop.core.vcs.test.test_all" title="Permalink to this headline">¶</a></h2>
+<p>Integration tests for the doorstop.vcs package.</p>
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_all.TestWorkingCopy">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_all.</code><code class="descname">TestWorkingCopy</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_all.TestWorkingCopy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></code></p>
+<p>Integration tests for a working copy.</p>
+<dl class="classmethod">
+<dt id="doorstop.core.vcs.test.test_all.TestWorkingCopy.setUpClass">
+<em class="property">classmethod </em><code class="descname">setUpClass</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_all.TestWorkingCopy.setUpClass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_all.TestWorkingCopy.test_ignores">
+<code class="descname">test_ignores</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_all.TestWorkingCopy.test_ignores" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the ignores file is parsed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.vcs.test.test_base">
+<span id="doorstop-core-vcs-test-test-base-module"></span><h2>doorstop.core.vcs.test.test_base module<a class="headerlink" href="#module-doorstop.core.vcs.test.test_base" title="Permalink to this headline">¶</a></h2>
+<p>Unit tests for the doorstop.vcs.base module.</p>
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_base.SampleWorkingCopy">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_base.</code><code class="descname">SampleWorkingCopy</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.SampleWorkingCopy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="doorstop.core.vcs.html#doorstop.core.vcs.base.BaseWorkingCopy" title="doorstop.core.vcs.base.BaseWorkingCopy"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.vcs.base.BaseWorkingCopy</span></code></a></p>
+<p>Sample WorkingCopy implementation.</p>
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.SampleWorkingCopy.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.SampleWorkingCopy.add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.SampleWorkingCopy.commit">
+<code class="descname">commit</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.SampleWorkingCopy.commit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.SampleWorkingCopy.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.SampleWorkingCopy.delete" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.SampleWorkingCopy.edit">
+<code class="descname">edit</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.SampleWorkingCopy.edit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.SampleWorkingCopy.lock">
+<code class="descname">lock</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.SampleWorkingCopy.lock" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_base.TestSampleWorkingCopy">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_base.</code><code class="descname">TestSampleWorkingCopy</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.TestSampleWorkingCopy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></code></p>
+<p>Tests for the doorstop.vcs.base module.</p>
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.TestSampleWorkingCopy.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.TestSampleWorkingCopy.setUp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.TestSampleWorkingCopy.test_ignored">
+<code class="descname">test_ignored</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.TestSampleWorkingCopy.test_ignored" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify ignored paths are detected.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_base.TestSampleWorkingCopy.test_ignored_on_ci">
+<code class="descname">test_ignored_on_ci</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_base.TestSampleWorkingCopy.test_ignored_on_ci" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the build directory is not ignored during CI.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.vcs.test.test_commands">
+<span id="doorstop-core-vcs-test-test-commands-module"></span><h2>doorstop.core.vcs.test.test_commands module<a class="headerlink" href="#module-doorstop.core.vcs.test.test_commands" title="Permalink to this headline">¶</a></h2>
+<p>Unit tests for the doorstop.vcs plugin modules.</p>
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_commands.</code><code class="descname">BaseTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></code></p>
+<p>Base TestCase for tests that need a working copy.</p>
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.DIRECTORY">
+<code class="descname">DIRECTORY</code><em class="property"> = None</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.DIRECTORY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.add">
+<code class="descname">add</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a file to the working copy.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.commit">
+<code class="descname">commit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save all files in the working copy.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.delete">
+<code class="descname">delete</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a file in the working copy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.dirpath">
+<code class="descname">dirpath</code><em class="property"> = 'path/to/mock/directory/'</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.dirpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.edit">
+<code class="descname">edit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edit a file in the working copy.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.lock">
+<code class="descname">lock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lock a file in the working copy.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.message">
+<code class="descname">message</code><em class="property"> = 'A commit message'</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.path">
+<code class="descname">path</code><em class="property"> = 'path/to/mock/file.txt'</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.BaseTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.BaseTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_commands.TestGit">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_commands.</code><code class="descname">TestGit</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestGit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.core.vcs.test.test_commands.BaseTestCase" title="doorstop.core.vcs.test.test_commands.BaseTestCase"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.vcs.test.test_commands.BaseTestCase</span></code></a></p>
+<p>Tests for the Git plugin.</p>
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.TestGit.DIRECTORY">
+<code class="descname">DIRECTORY</code><em class="property"> = '.git'</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestGit.DIRECTORY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestGit.test_add">
+<code class="descname">test_add</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestGit.test_add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Git can add files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestGit.test_commit">
+<code class="descname">test_commit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestGit.test_commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Git can commit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestGit.test_delete">
+<code class="descname">test_delete</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestGit.test_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Git can delete files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestGit.test_edit">
+<code class="descname">test_edit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestGit.test_edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Git can edit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestGit.test_lock">
+<code class="descname">test_lock</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestGit.test_lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Git can (fake) lock files.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_commands.TestMockVCS">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_commands.</code><code class="descname">TestMockVCS</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestMockVCS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.core.vcs.test.test_commands.BaseTestCase" title="doorstop.core.vcs.test.test_commands.BaseTestCase"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.vcs.test.test_commands.BaseTestCase</span></code></a></p>
+<p>Tests for the placeholder VCS plugin.</p>
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.TestMockVCS.DIRECTORY">
+<code class="descname">DIRECTORY</code><em class="property"> = '.mockvcs'</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestMockVCS.DIRECTORY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestMockVCS.test_add">
+<code class="descname">test_add</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestMockVCS.test_add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the placeholder VCS does not add files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestMockVCS.test_commit">
+<code class="descname">test_commit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestMockVCS.test_commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the placeholder VCS does not commit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestMockVCS.test_delete">
+<code class="descname">test_delete</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestMockVCS.test_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the placeholder VCS does not delete files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestMockVCS.test_edit">
+<code class="descname">test_edit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestMockVCS.test_edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the placeholder VCS does not edit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestMockVCS.test_lock">
+<code class="descname">test_lock</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestMockVCS.test_lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the placeholder VCS does not lock files.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_commands.TestSubversion">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_commands.</code><code class="descname">TestSubversion</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestSubversion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.core.vcs.test.test_commands.BaseTestCase" title="doorstop.core.vcs.test.test_commands.BaseTestCase"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.vcs.test.test_commands.BaseTestCase</span></code></a></p>
+<p>Tests for the Subversion plugin.</p>
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.TestSubversion.DIRECTORY">
+<code class="descname">DIRECTORY</code><em class="property"> = '.svn'</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestSubversion.DIRECTORY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestSubversion.test_add">
+<code class="descname">test_add</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestSubversion.test_add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Subversion can add files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestSubversion.test_commit">
+<code class="descname">test_commit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestSubversion.test_commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Subversion can commit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestSubversion.test_delete">
+<code class="descname">test_delete</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestSubversion.test_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Subversion can delete files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestSubversion.test_edit">
+<code class="descname">test_edit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestSubversion.test_edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Subversion can (fake) edit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestSubversion.test_lock">
+<code class="descname">test_lock</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestSubversion.test_lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Subversion can lock files.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doorstop.core.vcs.test.test_commands.TestVeracity">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.test_commands.</code><code class="descname">TestVeracity</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestVeracity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doorstop.core.vcs.test.test_commands.BaseTestCase" title="doorstop.core.vcs.test.test_commands.BaseTestCase"><code class="xref py py-class docutils literal"><span class="pre">doorstop.core.vcs.test.test_commands.BaseTestCase</span></code></a></p>
+<p>Tests for the Veracity plugin.</p>
+<dl class="attribute">
+<dt id="doorstop.core.vcs.test.test_commands.TestVeracity.DIRECTORY">
+<code class="descname">DIRECTORY</code><em class="property"> = '.sgdrawer'</em><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestVeracity.DIRECTORY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestVeracity.test_add">
+<code class="descname">test_add</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestVeracity.test_add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Veracity can add files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestVeracity.test_commit">
+<code class="descname">test_commit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestVeracity.test_commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Veracity can commit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestVeracity.test_delete">
+<code class="descname">test_delete</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestVeracity.test_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Veracity can delete files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestVeracity.test_edit">
+<code class="descname">test_edit</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestVeracity.test_edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Veracity can (fake) edit files.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.test_commands.TestVeracity.test_lock">
+<code class="descname">test_lock</code><span class="sig-paren">(</span><em>mock_call</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.test_commands.TestVeracity.test_lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify Veracity can lock files.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doorstop.core.vcs.test">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-doorstop.core.vcs.test" title="Permalink to this headline">¶</a></h2>
+<p>Integration tests for the doorstop.core.vcs package.</p>
+<dl class="class">
+<dt id="doorstop.core.vcs.test.TestFunctions">
+<em class="property">class </em><code class="descclassname">doorstop.core.vcs.test.</code><code class="descname">TestFunctions</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.TestFunctions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">unittest.case.TestCase</span></code></p>
+<p>Unit tests for top-level VCS functions.</p>
+<dl class="method">
+<dt id="doorstop.core.vcs.test.TestFunctions.test_find_root">
+<code class="descname">test_find_root</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.TestFunctions.test_find_root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify a root VCS directory can be found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.TestFunctions.test_find_root_error">
+<code class="descname">test_find_root_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.TestFunctions.test_find_root_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify an error occurs when no VCS directory can be found.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.TestFunctions.test_load">
+<code class="descname">test_load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.TestFunctions.test_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify a working copy can be created.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doorstop.core.vcs.test.TestFunctions.test_load_unknown">
+<code class="descname">test_load_unknown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doorstop.core.vcs.test.TestFunctions.test_load_unknown" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify a working copy can be created.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">doorstop.core.vcs.test package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.vcs.test.test_all">doorstop.core.vcs.test.test_all module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.vcs.test.test_base">doorstop.core.vcs.test.test_base module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.vcs.test.test_commands">doorstop.core.vcs.test.test_commands module</a></li>
+<li><a class="reference internal" href="#module-doorstop.core.vcs.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="doorstop.core.vcs.html"
+                        title="previous chapter">doorstop.core.vcs package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="doorstop.gui.html"
+                        title="next chapter">doorstop.gui package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/doorstop.core.vcs.test.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="doorstop.gui.html" title="doorstop.gui package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="doorstop.core.vcs.html" title="doorstop.core.vcs package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Doorstop 0.8.4 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >doorstop</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="doorstop.html" >doorstop package</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="doorstop.core.html" >doorstop.core package</a> &raquo;</li>
+          <li class="nav-item nav-item-4"><a href="doorstop.core.vcs.html" >doorstop.core.vcs package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, Jace Browning.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
+    </div>
+  </body>
+</html>
